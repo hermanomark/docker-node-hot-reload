@@ -9,3 +9,8 @@ docker compose up --build
 ```
 docker compose up
 ```
+
+# You can install new dependency by running
+```
+docker exec <your-container-id> npm install <your-package> --save
+```
