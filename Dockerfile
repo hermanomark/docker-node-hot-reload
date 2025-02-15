@@ -1,9 +1,11 @@
 FROM node:23-alpine
 
-COPY package.json /app/
-COPY src /app/
-
 WORKDIR /app
+
+# COPY package.json /app/
+COPY package*.json /app/
+
+COPY src /app/
 
 RUN npm install
 
